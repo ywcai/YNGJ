@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">多维网络分析</string>
+    <string name="app_name">院内管家</string>
     <string name="password">密码</string>
     <string name="username">用户名</string>
     <string name="userReg">注册新用户</string>
@@ -8,8 +8,8 @@
     <string name="bot_menu2">记录</string>
     <string name="bot_menu3"></string>
     <string name="bot_menu4"></string>
-    <string name="menu1">分享结果</string>
+    <string name="menu1">退出账号</string>
     <string name="menu2">版本更新</string>
-    <string name="menu3">使用帮助</string>
-    <string name="menu4">赞助作者</string>
+    <string name="menu3">修改密码</string>
+    <string name="menu4">通知公告</string>
 </resources>

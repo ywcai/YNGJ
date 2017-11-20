@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/line_space_stroke"
+    android:dividerPadding="1dp"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:showDividers="middle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/push_text_company_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="2dp"
+            android:text="快递公司"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ywcai.ls.control.flex.FlexButtonLayout
+            android:id="@+id/flex_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/push_text_company_name"
+            app:flexWrap="wrap"
+            app:btnUnSelectTextColor="@color/colorWifiBg"
+            app:isSelectOnlyOne="true"
+            app:justifyContent="space_between"></ywcai.ls.control.flex.FlexButtonLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/push_text_package_style"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="2dp"
+            android:text="包裹样式"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <ywcai.ls.control.flex.FlexButtonLayout
+            android:id="@+id/flex_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/push_text_package_style"
+            app:flexWrap="wrap"
+            app:isSelectOnlyOne="true"
+            app:btnBgColor="@color/LBlue"
+            app:btnUnSelectTextColor="@color/colorWifiBg"
+            app:btnBorderColor="@color/LBlue"
+            app:justifyContent="space_between">
+
+        </ywcai.ls.control.flex.FlexButtonLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/push_text_notification"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="2dp"
+            android:text="短信内容"
+
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            android:visibility="gone" />
+
+        <ywcai.ls.control.flex.FlexButtonLayout
+            android:id="@+id/flex_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/push_text_notification"
+            app:flexWrap="wrap"
+            app:btnUnSelectTextColor="@color/colorWifiBg"
+            app:btnBgColor="@color/LGreen"
+            app:btnBorderColor="@color/LGreen"
+            app:isSelectOnlyOne="true"
+            app:justifyContent="space_between"></ywcai.ls.control.flex.FlexButtonLayout>
+    </RelativeLayout>
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_gravity="right"
+            android:id="@+id/push_setting_save"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+            app:fb_borderColor="@android:color/white"
+            app:fb_borderWidth="1dp"
+            app:fb_defaultColor="@android:color/holo_red_dark"
+            app:fb_disabledColor="#CACAD9"
+            app:fb_disabledTextColor="@android:color/white"
+            app:fb_focusColor="#CACAD9"
+            app:fb_ghost="false"
+            app:fb_radius="4dp"
+            app:fb_text="确认"
+            app:fb_textColor="@android:color/white"
+            app:fb_textSize="12sp"></mehdi.sakout.fancybuttons.FancyButton>
+</LinearLayout>

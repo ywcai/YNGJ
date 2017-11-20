@@ -23,6 +23,7 @@
 
     <style name="LsAppBarOverlay" parent="Widget.AppCompat.PopupMenu.Overflow">
         <item name="overlapAnchor">false</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 
     <style name="TitleStyle" parent="TextAppearance.AppCompat.Large">
@@ -44,9 +45,8 @@
     </style>
 
     <style name="ToolbarTitleSize" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
-
     </style>
 
     <style name="ExpandedTitleSize" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">

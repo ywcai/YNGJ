@@ -2,6 +2,8 @@
   <dictionary name="zmy_11">
     <words>
       <w>addr</w>
+      <w>autofocus</w>
+      <w>bkshare</w>
       <w>bssid</w>
       <w>cancal</w>
       <w>chooseable</w>
@@ -11,7 +13,9 @@
       <w>rscp</w>
       <w>rsrp</w>
       <w>ssid</w>
+      <w>telnum</w>
       <w>wcdma</w>
+      <w>yngj</w>
       <w>ywcai</w>
     </words>
   </dictionary>

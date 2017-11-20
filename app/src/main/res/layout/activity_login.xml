@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/login_bg"
     android:paddingLeft="20dp"
-    android:paddingRight="20dp">
+    android:paddingRight="20dp"
+    android:paddingTop="20dp">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/login_toolbar"
@@ -15,7 +16,6 @@
         android:layout_marginLeft="-15dp"
         android:layout_marginRight="-20dp"
         android:theme="@style/LsToolBar"
-        app:popupTheme="@style/LsAppBarOverlay"
         app:title="@string/app_name"
         app:titleMarginTop="15dp"
         app:titleTextAppearance="@style/TitleStyle"
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:hint="@string/password"
-            android:inputType="textVisiblePassword"
+            android:inputType="textPassword"
             android:maxLength="16"
             android:maxLines="1"
             android:padding="2dp"
@@ -74,7 +74,6 @@
     </android.support.design.widget.TextInputLayout>
 
        <android.support.v7.widget.AppCompatButton
-
            android:layout_width="match_parent"
            android:layout_below="@+id/login_input_password"
            android:layout_height="50dp"

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/pull_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:paddingTop="@dimen/toolbar_top"
+        app:popupTheme="@style/LsAppBarOverlay">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical|left"
+            android:text="包裹入库"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@+id/pull_toolbar"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ywcai.ls.control.flex.FlexButtonLayout
+            android:id="@+id/flex_button_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:flexDirection="row"
+            app:justifyContent="space_between"
+            app:btnBgColor="@color/LBlue"
+            app:btnBorderColor="@color/LBlue"
+            app:btnTextSize="10"></ywcai.ls.control.flex.FlexButtonLayout>
+
+        <ywcai.ls.control.flex.FlexButtonLayout
+            android:id="@+id/flex_button_test2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:isSelectOnlyOne="true"
+            app:btnBgColor="@color/LOrange"
+            app:btnBorderColor="@color/LOrange"
+            app:btnTextSize="10"></ywcai.ls.control.flex.FlexButtonLayout>
+
+        <ywcai.ls.control.flex.FlexButtonLayout
+            android:id="@+id/flex_button_test3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:btnBgColor="@color/LGreen"
+            app:btnBorderColor="@color/LGreen"
+            app:isShowSelectAll="false"
+            app:btnTextSize="10"></ywcai.ls.control.flex.FlexButtonLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/push_float_btn_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/add_task"
+        app:backgroundTint="@android:color/holo_orange_light"
+        app:elevation="5dp"
+        app:fabSize="normal" />
+
+    <RelativeLayout
+        android:id="@+id/pull_snack_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="0dp" />
+
+</RelativeLayout>
+
+
+
